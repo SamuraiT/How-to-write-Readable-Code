@@ -1,7 +1,8 @@
 # How-to-write-Readable-Code
 For all of you who are trying to write readable code
 
-リーダブルコードを書きたいあなたへ
+リーダブルコードを書きたいあなたへ．
+*注意*：これはリーダブルコードを私なりにまとめたものである．
 
 1. 表面的に奇麗にする
 ----------------------
@@ -31,4 +32,5 @@ variable -> variable_name
 
 
 
-2. 
+2. 誤解されるような名前をつけるな
+-------------
