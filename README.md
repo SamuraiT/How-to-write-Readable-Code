@@ -34,3 +34,27 @@ variable -> variable_name
 
 2. 誤解されるような名前をつけるな
 -------------
+* 限界値を条件判断するような場合
+
+体重が`100kg`より重ければエレベータに乗れないとしよう．
+そうしたら，あなたは`TOO_MUCH_WEIGHT = 100`とするかもしれない．
+
+```python
+TOO_MUCH_WEIGHT = 100
+if your_weight > TOO_MUCH_WEIGHT:
+      Raise OverWeightError():
+```
+だが，この変数名だと`TOO_MUCH_WEIGHT`を含めるのかわからない．本来ならば100kgを超えないようにとしたい．
+その場合は変数名に`max`を付けよう
+```python
+MAX_WEIGHT_KG = 100
+if your_weight > MAX_WEIGHT_KG:
+      Raise OverWeightError():
+```
+ついでに単位も付けた．
+
+* pythonの配列の用に最初は含めて，最後は含めない時は`begin`, `end`を使う
+* 両方含めるときは，`first`, `last`を使う
+* ブール値には`is, has, can, should`を使う．ただし，`scheme, ruby`では`eql?`のように`?`が使われている
+* get, sizeという名前のメソッドには軽量(`O(1)`)なメソッドが期待されている．
+
