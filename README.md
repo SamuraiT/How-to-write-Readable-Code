@@ -19,7 +19,7 @@ For all of you who are trying to write readable code
 * クラス, 関数，変数の書き方に区別をつける．
 
 これは言語で依存するので，その言語・会社のコーディング規約を参照されたい（以下，pythonの例）
-```
+```python
 class-> class ClassName(object):
 private member variable -> _member_variable
 
